@@ -59,8 +59,8 @@ mount PdfjsViewer::Rails::Engine => "/pdfjs", as: 'pdfjs'
 Now you can use a link in your templates to open up the viewer:
 
 ```erb
-<%= link_to "display using the full viewer", pdfjs.full_path(file: "/sample.pdf") %>
-<%= link_to "display using the minimal viewer", pdfjs.minimal_path(file: "/sample.pdf") %>
+<%= link_to "display using the full viewer", pdfjs.full_path(file: "/assets/sample.pdf") %>
+<%= link_to "display using the minimal viewer", pdfjs.minimal_path(file: "/assets/sample.pdf") %>
 ```
 
 ### Using the helper
@@ -70,8 +70,8 @@ If your integration scenario is more complex you may want to consider using the
 an iframe.
 
 ```erb
-<%= pdfjs_viewer pdf_url: "/sample.pdf", style: :full %>
-<%= pdfjs_viewer pdf_url: "/sample.pdf", style: :minimal %>
+<%= pdfjs_viewer pdf_url: "/assets/sample.pdf", style: :full %>
+<%= pdfjs_viewer pdf_url: "/assets/sample.pdf", style: :minimal %>
 ```
 
 NOTE: The helper will render a full HTML document and should not be used in a layout.
