@@ -7,7 +7,11 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'pdfjs_viewer-rails'
+gem 'pdfjs_viewer-rails', github: 'bloomv/pdfjs_viewer-rails'
+```
+Then run:
+```ruby
+bundle install
 ```
 
 *Note: pdfjs_viewer-rails is still in early development. Please report if you encounter any issues along the way.*
